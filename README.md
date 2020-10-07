@@ -3,4 +3,4 @@
 
 Uniform random parameter scan using SPheno to calculate BG fine-tuning measure (at one loop)
 
-UPDATE: kernel for NN model training on data
+UPDATE: kernel for NN model training on data (uploaded via Kaggle)
