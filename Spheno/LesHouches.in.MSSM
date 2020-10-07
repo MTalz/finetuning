@@ -1,0 +1,118 @@
+Block MODSEL      #  
+1 1               #  1/0: High/low scale input 
+2 1              # Boundary Condition  
+6 1               # Generation Mixing 
+Block SMINPUTS    # Standard Model inputs 
+2 1.166370E-05    # G_F,Fermi constant 
+3 1.187000E-01    # alpha_s(MZ) SM MSbar 
+4 9.118870E+01    # Z-boson pole mass 
+5 4.180000E+00    # m_b(mb) SM MSbar 
+6 1.735000E+02    # m_top(pole) 
+7 1.776690E+00    # m_tau(pole) 
+Block MINPAR      # Input parameters 
+1 1377.5024414062500   # MBino 
+2 2309.5092773437500   # MWino 
+3 989.89868164062500   # MGluino 
+4 1.0000000000000000  # SignMu 
+#5 0.000000E+00    # MQsq
+#6 0.000000E+00    # MLsq
+#7 0.000000E+00    # MDsq
+#8 0.000000E+00    # MUsq
+#9 0.000000E+00    # MEsq
+10 532563162.75000000 # MHDsq 
+11 -3978257.2653198242 # MHUsq 
+#12 0.000000E+00    # AEn
+#13 0.000000E+00    # AUp
+#14 0.000000E+00    # ADn
+#15 0.000000E+00    # TanBeta
+#16 0.000000E+00    # Muinput
+Block EXTPAR      # Input parameters 
+#1 0.000000E+00    # M1input
+#2 0.000000E+00    # M2input
+#3 0.000000E+00    # M3input
+#23 0.000000E+00    # Muinput
+#24 0.000000E+00    # MA2input
+25 1.5402832031250000  # TanBeta 
+Block MSQ2IN #
+1 1 186218.26171875000  # 
+2 2 186218.26171875000  # 
+3 3 -53833.007812500000  # 
+Block MSL2IN #
+1 1 421325.68359375000  # 
+2 2 421325.68359375000  # 
+3 3 8724792.4804687500  # 
+Block MSU2IN #
+1 1 3259094.2382812500  # 
+2 2 3259094.2382812500  # 
+3 3 275756.83593750000  # 
+Block MSD2IN #
+1 1 7475646.9726562500  # 
+2 2 7475646.9726562500  # 
+3 3 2939392.0898437500  # 
+Block MSE2IN #
+1 1 875061.03515625000  # 
+2 2 875061.03515625000  # 
+3 3 8774230.9570312500  # 
+Block YuIN #
+1 1 0 #
+2 2 0 #
+3 2 -0.02 #
+3 3 0.5  # 
+Block YeIN #
+1 1 0 #
+2 2 0 #
+3 3 0.08 #
+Block YdIN #
+1 1 0 #
+2 2 0 #
+3 3 0.06 #
+Block TeIN #
+1 1 0 #
+2 2 0 #
+3 3 2416.6259765625000  # 
+Block TuIN #
+1 1 0 #
+2 2 0 #
+3 3 1254.8217773437500  # 
+Block TdIN #
+1 1 0 #
+2 2 0 #
+3 3 -1718.6279296875000  # 
+Block SPhenoInput   # SPheno specific input 
+  1  0              # error level 
+  2  0              # SPA conventions 
+  7  0              # Skip 2-loop Higgs corrections 
+  8  1              # Method used for two-loop calculation 
+  9  1              # Gaugeless limit used at two-loop 
+ 10  1              # safe-mode used at two-loop 
+ 11 1               # calculate branching ratios 
+ 13 1               # 3-Body decays: none (0), fermion (1), scalar (2), both (3) 
+ 14 0               # Run couplings to scale of decaying particle 
+ 12 1.000E-04       # write only branching ratios larger than this value 
+ 15 1.000E-30       # write only decay if width larger than this value 
+31 1.0E+10         # fixed GUT scale (-1: dynamical GUT scale) 
+ 32 0               # Strict unification 
+ 34 1.000E-04       # Precision of mass calculation 
+ 35 100              # Maximal number of iterations
+ 36 20               # Minimal number of iterations before discarding points
+ 37 1               # Set Yukawa scheme  
+ 38 2               # 1- or 2-Loop RGEs 
+ 50 1               # Majorana phases: use only positive masses (put 0 to use file with CalcHep/Micromegas!) 
+ 51 0               # Write Output in CKM basis 
+ 52 0               # Write spectrum in case of tachyonic states 
+ 55 1               # Calculate loop corrected masses 
+ 57 0               # Calculate low energy constraints 
+ 65 1               # Solution tadpole equation 
+ 75 1               # Write WHIZARD files 
+ 76 1               # Write HiggsBounds file   
+ 77 0               # Output for MicrOmegas (running masses for light quarks; real mixing matrices)   
+ 86 0.              # Maximal width to be counted as invisible in Higgs decays; -1: only LSP 
+510 0.              # Write tree level values for tadpole solutions 
+515 1               # Write parameter values at GUT scale 
+520 1.              # Write effective Higgs couplings (HiggsBounds blocks): put 0 to use file with MadGraph! 
+521 1.              # Diphoton/Digluon widths including higher order 
+525 0.              # Write loop contributions to diphoton decay of Higgs 
+530 0.              # Write Blocks for Vevacious 
+550 1.             # Calculate Fine-Tuning
+551 0.             # One-loop Fine-Tuning
+ 
